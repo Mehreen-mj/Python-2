@@ -1,0 +1,21 @@
+def celcius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+def fahrenheit_to_celcius(f):
+    return (f - 32) * 5/9
+
+print("1. celcius to fahrenheit")
+print("2. fahrenheit to celcius")
+
+choice = input("enter your choice (1 or 2) : ")
+if choice == "1":
+    c = float(input("enter temperature in celcius : "))
+    print("temperature in fahrenheit = ",celcius_to_fahrenheit(c))
+
+elif choice =="2":
+    f = float(input("enter temperature in fahrenheit : "))
+    print("temperature in celcius = ",fahrenheit_to_celcius(f))
+
+else:
+    print("invalid choice")
+    
